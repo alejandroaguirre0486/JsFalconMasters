@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<h1 id="titulo">Titulo de nuestro sitio web</h1>
+	<div id="subtitulo"></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sint excepturi nostrum nesciunt vitae ad eligendi, laudantium itaque possimus iste modi ab et iusto mollitia, hic ut quis. Debitis, culpa.</p>
+	<p id="segundo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi voluptatibus dolores minus sit exercitationem, voluptates iste repudiandae cum. Suscipit odit dignissimos cum odio et eligendi reiciendis, harum vitae praesentium asperiores.</p>
+
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsam harum doloremque cumque eius, similique ipsum, neque, earum, consequatur incidunt ex recusandae consectetur? Ea voluptas quisquam possimus modi dignissimos, odit!</p>
+
+	<script>
+		var elementosP = document.getElementsByTagName('p');
+
+		// elementosP[0].innerHTML
+		// de esta manera podemos acceder a todo el contenido de nuestra etiqueta
+
+		//elementosP[0].innerHTML = "OU YEAH"_;
+		//cambia temporalmente el parrafo
+
+		var segundoParrafo = document.getElementById('segundo');
+
+     // 1.Crear el elemento
+     var elemento = document.createElement('h2');
+     // 2.Crear un nodo de texto
+     var contenido = document.createTextNode('Este es nuestro titular');
+     // 3.Añadir el nodo de texto al elemento
+     elemento.appendChild(contenido);
+     // 4.Agregar atributos al elemento
+     elemento.setAttribute('align','center');
+     // 5.Agregar el elemento al documento
+     document.getElementById('subtitulo').appendChild(elemento);
+	</script>
+</body>
+</html>

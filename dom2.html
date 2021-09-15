@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document Object Model</title>
+</head>
+<body>
+	<ol id="primero">
+		<li>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Aliquam ex odit, quis.</li>
+		<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+	</ol>
+</body>
+<script>
+	var elemento = document.createElement('li'),
+	contenido = document.createTextNode('Nuevo texto');
+
+	elemento.appendChild(contenido);
+	
+
+	// var padre = document.getElementsByTagName('li')[0].parentNode ; 
+	// padre.appendChild(elemento);
+
+// var primerElemento = document.getElementById('primero');
+// primerElemento.textContent = 'NUEVO TEXTO';
+
+var padre = document.getElementsByTagName('li')[0].parentNode;
+referencia = document.getElementsByTagName('li')[0];
+padre.replaceChild(elemento,referencia);
+
+</script>
+</html>

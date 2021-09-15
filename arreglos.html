@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arreglos</title>
+</head>
+<body>
+	<script>
+		
+
+		var amigos = ["Carlos ", "Cesar ", "Alex"];
+		
+		amigos[0] = "Arturo";
+	console.log(amigos[0]);
+	console.log('tienes '+ amigos.length + ' amigos');
+	// .push  Agrega al final 
+	amigos.push('Luis','Fernando','Oscar');
+	//.pop elimina el ultimo dato
+	amigos.pop();
+
+	amigos2 = ['Luis','Fernando','Oscar'];
+	//.concat concatena arreglos
+	amigos3 = amigos.concat(amigos2);
+
+    //.join(','); me deja agregar puntuacion al arreglo    
+	document.write(amigos.join(' , '));
+
+//.sort () ordena alfabeticamente el arreglo
+var ordenados = amigos.sort();
+
+//.reverse () ordena en forma inversa el arreglo
+var ordenados = amigos.reverse();
+
+	</script>
+</body>
+</html>
